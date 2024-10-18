@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cào thẻ may mắn - Xổ số</title>
+    <link rel="stylesheet" href="quaysố.css">
+</head>
+<body>
+    <div class="container">
+        <h1 id="title">NGƯỜI TRÚNG QUÀ SỐ 1 LÀ</h1>
+        <div id="result-box">
+            <div id="card-number">?</div>
+        </div>
+        <button id="open-box-btn">Mở hũ</button>
+        <button id="next-card-btn" disabled>Món kế tiếp</button>
+    </div>
+
+    <audio id="bg-music" autoplay loop>
+        <source src="music/xo-so-mien-bac.mp3" type="audio/mp3">
+    </audio>
+
+    <!-- Nút bật/tắt nhạc -->
+    <div id="music-toggle">
+        <img id="music-icon" src="images/sound-on.png" alt="Music Toggle">
+    </div>
+
+    <div id="confetti-container"></div>
+
+    <script src="cuộcsống.js"></script>
+</body>
+</html>

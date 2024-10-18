@@ -1,0 +1,118 @@
+/* Tổng thể */
+body {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    background-color: #F1E8D9; /* Thay đổi màu phông nền */
+    margin-top: 50px;
+    color: #fff;
+    overflow: hidden;
+}
+
+.container {
+    max-width: 450px;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.75); /* Hộp hiển thị trong suốt */
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #ffcc00; /* Màu vàng sáng */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+/* Hộp hiển thị kết quả */
+#result-box {
+    width: 250px;
+    height: 250px;
+    margin: 0 auto 20px auto;
+    background: linear-gradient(135deg, #ff3366, #ffcc00); /* Gradient đỏ-vàng */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(255, 51, 102, 0.6);
+}
+
+#card-number {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.7);
+}
+
+/* Nút bấm */
+button {
+    margin-top: 20px;
+    padding: 15px 30px;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #fff;
+    background-color: #ff3366;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(255, 51, 102, 0.5);
+    transition: all 0.3s ease;
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+    box-shadow: none;
+}
+
+button:hover:not(:disabled) {
+    background-color: #ffcc00;
+    box-shadow: 0 8px 20px rgba(255, 204, 0, 0.8);
+    transform: translateY(-3px);
+}
+
+/* Pháo hoa giấy */
+#confetti-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+/* Pháo giấy */
+.confetti {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    opacity: 0.7;
+    animation: fall 5s linear infinite;
+}
+
+@keyframes fall {
+    0% {
+        transform: translateY(-100vh);
+    }
+    100% {
+        transform: translateY(100vh);
+        opacity: 0;
+    }
+}
+
+/* Nút bật/tắt nhạc */
+#music-toggle {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+#music-icon {
+    width: 100%;
+    height: auto;
+}
